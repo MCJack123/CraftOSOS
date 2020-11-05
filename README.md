@@ -1,6 +1,8 @@
 # CraftOSOS
 ComputerCraft as an x86 PC operating system. Mostly emulates ComputerCraft 1.8. Based on [CraftOS-EFI](https://github.com/MCJack123/craftos-efi), which in turn is based on [craftos-native](https://github.com/MCJack123/craftos-native) - this is NOT compatible with [CraftOS-PC](https://github.com/MCJack123/craftos2)!
 
+![Screenshot](screenshot.png)
+
 ## Features
 * Decent emulation of ComputerCraft 1.80pr1
 * 53x26 terminal with proper font and text colors
