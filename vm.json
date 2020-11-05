@@ -1,0 +1,12 @@
+{
+  "net": [],
+  "vga": "std",
+  "drives": [
+    {
+      "file": "rom.img",
+      "type": "ide",
+      "format": "raw",
+      "media": "disk"
+    }
+  ]
+}
