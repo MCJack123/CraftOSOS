@@ -30,7 +30,7 @@ The most recent version is available in the Releases tab as a disk image (.img) 
 * x86-64 PC or virtual machine
 * 32 MB RAM
 * Monitor and video card that support 16-color 640x480 VGA (this should be standard)
-* IDE interface for storage, or SATA in ATA emulation mode
+* PIIX3 IDE interface for storage, or SATA in ATA emulation mode
   * All ROM files must be on the first partition of the primary master drive, formatted as FAT
   * 20 MB should be enough space to fit everything (GRUB, chainloader, kernel, ROM)
 * PS/2 keyboard, or a BIOS that supports PS/2 emulation for USB
@@ -47,7 +47,7 @@ First, you'll need to convert the image to a VDI with `VBoxManage`:
 ```
 VBoxManage convertfromraw CraftOSOS.img CraftOSOS.vdi --format VDI
 ```
-Then create a 64-bit Other OS VM using the VDI created earlier.
+Then create a 64-bit Other OS VM using the VDI created earlier. Make sure the drive is on an IDE controller, and **set the controller type to PIIX3 (NOT PIIX4).**
 
 ### Installing on a real system
 Connect an IDE or SATA hard drive to your main computer, and flash the IMG file to the entire disk (NOT a partition!). On Windows, Rufus should work fine for this. On Mac or Linux, you can run this command:
